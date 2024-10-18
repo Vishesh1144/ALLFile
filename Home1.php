@@ -4,96 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent a Vehicle Today!</title>
+    
+    <!-- Inline CSS -->
     <style>
-        /* Basic styling for the page */
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
         }
 
-        /* Style for the navigation bar */
-        .navbar {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /* Navigation Bar */
+        #navbar {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            position: sticky;
+            top: 0px;
+            background-color: #ef8a42;
+            padding: 10px;
+            z-index: 1;
         }
 
-        .navbar .logo {
-            font-size: 1.5em;
-            font-weight: bold;
+        #navbar::before {
+            content: "";
+            background-color: #ef8a42;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
         }
 
-        /* Style for the navigation links */
+        /* Navigation Bar: Logo and Image */
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+            border-radius: 30px;
+        }
+
+        /* Navigation Bar: List Styling */
         .nav-links {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
             display: flex;
+            font-family: 'Baloo Bhai', cursive;
+            list-style: none;
         }
 
         .nav-links li {
-            margin-left: 1em;
+            font-size: 1.3rem;
+            margin-right: 15px;
         }
 
-        .nav-links a {
-            color: #fff;
+        .nav-links li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
             text-decoration: none;
         }
 
+        .nav-links li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        /* Account Icon */
+        .account-icon {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
         .account-icon img {
-            width: 30px;
-            vertical-align: middle;
+            height: 40px;
             margin-right: 10px;
         }
 
         .account-icon a {
-            color: #fff;
-            text-decoration: none;
+            color: white;
             margin-left: 10px;
+            text-decoration: none;
         }
 
-        /* Main content area */
+        .account-icon a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* Main Content Styling */
         .main-content {
-            padding: 2em;
             text-align: center;
+            padding: 50px;
+            background-color: #f8f8f8;
         }
 
-        /* Footer styling */
+        .main-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* About Us Section */
         footer {
-            background-color: #f0f0f0;
-            padding: 1.5em;
+            background-color: black;
+            color: white;
+            padding: 20px;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
-        /* About us section in footer */
         .about-us h2 {
-            margin: 0;
+            font-family: 'Bree Serif', serif;
+            font-size: 2.1rem;
+            margin-bottom: 10px;
         }
 
         .about-us p {
-            margin: 0.5em 0;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.1rem;
+            line-height: 1.5;
         }
+
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <div class="navbar-left">
-            <div class="logo"></div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Bookings</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
+    <!-- Navigation Bar (fixed at the top) -->
+    <div id="navbar">
+        <div id="logo">
+            <img src="account-logo.png" alt="Logo" />
         </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
         <div class="account-icon">
             <img src="account-logo.png" alt="Account" />
             <a href="OEP_registration_page.html" target="_self">Register</a>
@@ -102,17 +162,16 @@
     </div>
 
     <!-- Main Content Area -->
-    <div class="main-content" id="page-content">
+    <div class="main-content">
         <h1>Welcome to Our Vehicle Rental Service</h1>
         <p>Find the perfect vehicle for your next trip. Browse our selection of cars, SUVs, and more!</p>
     </div>
 
-    <!-- About Us Section in Footer -->
+    <!-- About Us Section -->
     <footer id="footer">
         <div class="about-us">
             <h2>About Us</h2>
-            <p>We are a leading vehicle rental company offering a wide range of cars, SUVs, and more.</p>
-            <p>Our mission is to provide the best rental experience with competitive prices and top-notch customer service.</p>
+            <p>We are a leading vehicle rental company offering a wide range of cars, SUVs, and more. Our mission is to provide the best rental experience with competitive prices and top-notch customer service.</p>
             <p>Whether you're looking for a short-term rental or a long-term vehicle solution, we have you covered. Thank you for choosing us!</p>
         </div>
     </footer>
