@@ -12,8 +12,10 @@
             padding: 0;
         }
 
-        html {
-            scroll-behavior: smooth;
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         /* CSS Variables */
@@ -32,27 +34,15 @@
             z-index: 1;
         }
 
-        #navbar::before {
-            content: "";
-            background-color: #ef8a42;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            z-index: -1;
-            opacity: 0.9;
-        }
-
         /* Navigation Bar: Logo and Image */
         #logo {
             margin: 10px 34px;
         }
 
         #logo img {
-            height: 59px;
-            margin: 3px 6px;
-            border-radius: 30px;
+            height: 40px; /* Set the height to a smaller size */
+            width: auto; /* Maintain aspect ratio */
+            margin: 0; /* Remove margin */
         }
 
         /* Navigation Bar: List Styling */
@@ -105,6 +95,7 @@
 
         /* Main Content Styling */
         .main-content {
+            flex: 1; /* This makes the main content take the remaining space */
             text-align: center;
             padding: 50px;
             background-color: #f8f8f8;
@@ -139,7 +130,6 @@
             font-size: 1.1rem;
             line-height: 1.5;
         }
-
     </style>
 </head>
 <body>
