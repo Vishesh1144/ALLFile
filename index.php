@@ -115,19 +115,20 @@
         footer {
             background-color: black;
             color: white;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
 
         .about-us h2 {
             font-family: 'Bree Serif', serif;
-            font-size: 2.1rem;
-            margin-bottom: 10px;
+            font-size: 2rem;
+            margin-bottom: 2px;
+
         }
 
         .about-us p {
             font-family: 'Bree Serif', serif;
-            font-size: 1.1rem;
+            font-size: .6rem;
             line-height: 1.5;
         }
     </style>
@@ -136,20 +137,19 @@
 
     <!-- Navigation Bar (fixed at the top) -->
     <div id="navbar">
-        <div id="logo">
-            <img src="account-logo.png" alt="Logo" />
-        </div>
+        
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Bookings</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
         <div class="account-icon">
-            <img src="account-logo.png" alt="Account" />
+            <img src="./images/account-logo.png" alt="Account" />
             <a href="OEP_registration_page.html" target="_self">Register</a>
-            <a href="OEP_sign_in.html" target="_self">Sign-In</a>
+            <a href="Login.php" target="_self">Sign-In</a>
         </div>
     </div>
+    
 
     <!-- Main Content Area -->
     <div class="main-content">
