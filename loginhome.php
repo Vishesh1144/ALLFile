@@ -144,7 +144,7 @@ session_start(); // Start the session at the beginning of the file
         
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Bookings</a></li>
+            <li><a href="Car_cards.html">Bookings</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
         <div class="account-icon">
