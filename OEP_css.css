@@ -56,7 +56,7 @@ input[type="checkbox"] {
 
 button {
     padding: 12px;
-    background-color: #d80b0b;
+    background-color: #e58d09;
     color: white;
     border: none;
     border-radius: 5px;
@@ -67,7 +67,7 @@ button {
 
 
 button:hover {
-    background-color: #10ed3c;
+    background-color: #cd9214;
 }
 /* 
 button.google-signup, button.google-signin {
@@ -110,5 +110,5 @@ p {
     margin-bottom: 20px;
 }
 #invalid{
-    color: rgb(255, 0, 162);
+    color: rgb(255, 0, 0);
 }
