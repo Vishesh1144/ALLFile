@@ -163,6 +163,7 @@ session_start(); // Start the session at the beginning of the file
 
     <!-- Main Content Area -->
     <div class="main-content">
+       <h1> <?php echo "Hello,".($_SESSION['user'])?><h1>
         <h1>Welcome to Our Vehicle Rental Service</h1>
         <p>Find the perfect vehicle for your next trip. Browse our selection of cars, SUVs, and more!</p>
     </div>

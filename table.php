@@ -77,6 +77,7 @@ $result = $conn->query($sql);
         h1 {
             color: blue;
             text-align: center;
+       
         }
 
         /* Responsive design for smaller screens */

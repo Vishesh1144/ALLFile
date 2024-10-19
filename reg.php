@@ -33,7 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['firstname'])) {
     
     // Execute the query
     if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
+        echo "<script>
+        alert('Registration successful!');
+        window.location.href = 'index.php'; // Redirect to the registration page
+      </script>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
