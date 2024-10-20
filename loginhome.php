@@ -101,13 +101,19 @@ session_start(); // Start the session at the beginning of the file
         .main-content {
             flex: 1; /* This makes the main content take the remaining space */
             text-align: center;
-            padding: 50px;
-            background-color: #f8f8f8;
+            background-image: url('./images/login.jpg');
+            background-size:contain ;
+            
         }
-
+        
         .main-content h1 {
+            
             font-size: 2.5rem;
             margin-bottom: 20px;
+            box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.6); /* Button shadow */
+            text-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
+            color:white;
+            background-color: orange;
         }
 
         .main-content p {
@@ -164,7 +170,7 @@ session_start(); // Start the session at the beginning of the file
     <!-- Main Content Area -->
     <div class="main-content">
        <h1> <?php echo "Hello,".($_SESSION['user'])?><h1>
-        <h1>Welcome to Our Vehicle Rental Service</h1>
+        <h2>Welcome to Our Vehicle Rental Service</h1>
         <p>Find the perfect vehicle for your next trip. Browse our selection of cars, SUVs, and more!</p>
     </div>
 

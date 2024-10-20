@@ -20,15 +20,23 @@ if ($conn->connect_error) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In Page</title>
     <link rel="stylesheet" href="OEP_css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
+        body{
+            background-image: url('./images/desert.png');
+            background-size: cover;
+            
+        }
         .form-container {
+            
             max-width: 400px; /* Set max width for the form */
             margin: 0 auto; /* Center the form container */
             padding: 20px; /* Add some padding */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual appeal */
             border-radius: 5px; /* Round corners */
-        }
+            /* background-image: url('./images/sign.jpg');
+            background-size: cover;
+        } */
 
         .input-field {
             width: calc(100% - 20px); /* Set width to full minus padding */

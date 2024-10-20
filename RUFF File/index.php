@@ -5,28 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent a Vehicle Today!</title>
     
-  
-<body>
-<!-- <link rel="stylesheet" href="home.css"> -->
-   <!-- Inline CSS -->
-   <style>
+    <!-- Inline CSS -->
+    <style>
         * {
             margin: 0;
             padding: 0;
-        }
-        body{
-            background-image: url('./images/homepage.jpg');
-            background-size: contain; 
-            background-position: center;
-            background-repeat: no-repeat; 
-      
         }
 
         html, body {
             height: 100%;
             display: flex;
             flex-direction: column;
-          
         }
 
         /* CSS Variables */
@@ -107,35 +96,20 @@
         /* Main Content Styling */
         .main-content {
             flex: 1; /* This makes the main content take the remaining space */
-            text-align: justify;
-            /* color:white; */
-            padding: 55px;
-            background-image: url('./images/homepage3.jpg');
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .main-content h1 {
-            width:100vh;
-    
             text-align: center;
-            box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.6); /* Button shadow */
-            text-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+            background-image: url('homepage3.jpg');
+            padding: 50px;
+            background-color: #f8f8f8;
+        }
+
+        .main-content h1 {
             font-size: 2.5rem;
-            font-family: Arial, Helvetica, sans-serif;
             margin-bottom: 20px;
-            padding:10px;
-            float: right;
-            /* border: 2px solid rgb(196, 18, 18); */
-            /* background-color: rgba(8, 218, 255, 0.763); */
         }
 
         .main-content p {
-            color:black;
             font-size: 1.2rem;
-            text-align: center;
-            float: right;
+            color: #333;
         }
 
         /* About Us Section */
@@ -150,6 +124,7 @@
             font-family: 'Bree Serif', serif;
             font-size: 2rem;
             margin-bottom: 2px;
+
         }
 
         .about-us p {
@@ -160,33 +135,25 @@
     </style>
 </head>
 <body>
+
     <!-- Navigation Bar (fixed at the top) -->
     <div id="navbar">
+        
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="session-check.php">Book now</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
-
         <div class="account-icon">
             <img src="./images/account-logo.png" alt="Account" />
-            <?php
-            // If the user is logged in, show the user's name and logout option
-            if (isset($_SESSION['user'])) {
-                echo '<a href="#">' . htmlspecialchars($_SESSION['user']) . '</a>';
-                echo '<a href="Logout.php" target="_self">Log Out</a>';
-            } else {
-                // If the user is not logged in, show the Sign In and Register options
-                echo '<a href="OEP_registration_page.html" target="_self">Register</a>';
-                echo '<a href="Login.php" target="_self">Sign-In</a>';
-            }
-            ?>
+            <a href="OEP_registration_page.html" target="_self">Register</a>
+            <a href="Login.php" target="_self">Sign-In</a>
         </div>
     </div>
+    
 
     <!-- Main Content Area -->
     <div class="main-content">
-        
         <h1>Welcome to Our Vehicle Rental Service</h1>
         <p>Find the perfect vehicle for your next trip. Browse our selection of cars, SUVs, and more!</p>
     </div>
